@@ -51,3 +51,8 @@ gem 'spring',        group: :development
 
 # Masonry jQuery Gem
 gem 'jquery-masonry-rails', '~> 3.1.5'
+
+# Heroku
+group :production do
+  gem 'rails_12factor'
+end
