@@ -17,12 +17,12 @@ $(document).on('ready page:load', function(){
   });
 
   $('.options').hide( function(){
-    $('img' ).on('mouseenter', function(){
-      $(this).closest('.item').find('.options').fadeIn();
+    $('.item' ).on('mouseenter', function(){
+      $(this).find('.options').fadeIn();
     });
 
-    $('img').on('mouseleave', function(){
-      $(this).closest('.item').find('.options').fadeOut();
+    $('.item').on('mouseleave', function(){
+      $(this).find('.options').fadeOut();
     });
   });
 });
