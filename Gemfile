@@ -48,6 +48,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Omniauth for Facebook
+gem 'omniauth'
+gem 'omniauth-facebook', '1.4.0'
 
 # Masonry jQuery Gem
 gem 'jquery-masonry-rails', '~> 3.1.5'
