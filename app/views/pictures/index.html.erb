@@ -1,0 +1,24 @@
+<div id="header">
+
+  <a href="#" class="home_link"><h1 id="headline">Wynstagram</h1><i class="fa fa-paint-brush fa-3x"></i></a>
+  <div class="new_button"><%= link_to '', new_picture_path, class:"fa fa-plus-square fa-2x" %></div>
+</div>
+<br>
+
+<div id="container">
+  <% @pictures.each do |picture| %>
+  <div class="item">
+      <%= image_tag picture.url, class:"size-#{rand(3) + 1}" %>
+      <div class="options">
+      <h3><%= picture.title %></h3>
+      <!-- <%= link_to 'Show', picture, class:"fa fa-search" %> -->
+      <%= link_to '', edit_picture_path(picture), class:"fa fa-pencil fa-2x" %>
+      <%= link_to '', picture, method: :delete, data: { confirm: 'Are you sure?' }, class:"fa fa-times fa-2x" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+  <br>
+
+ <footer id="footer">Copyright&copy; | Wynfinite Loop | 2014</footer>

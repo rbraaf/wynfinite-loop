@@ -1,0 +1,10 @@
+####### Wynfinite Loop #######
+
+This project will create a clone of Imgur called Photogur. It allows users to re­post images
+they find online.
+
+Ruby version 2.1.3
+
+Uses imagesLoaded.js to run Masonry on page load.
+
+jQuery Masonry Gem installed - needed for image effects.
