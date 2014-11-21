@@ -1,7 +1,10 @@
 <div id="header">
 
   <a href="https://quiet-temple-2033.herokuapp.com/" class="home_link"><h1 id="headline">Wynstagram</h1><i class="fa fa-paint-brush fa-3x"></i></a>
-  <div class="new_button"><%= link_to '', new_picture_path, class:"fa fa-plus-square fa-2x" %></div>
+  <div class="new_button"><%= link_to '', new_picture_path, class:"fa fa-plus-square fa-2x" %>
+  <!-- Facebook Login -->
+  <%= render 'facebook' %>
+  </div>
 </div>
 <br>
 
