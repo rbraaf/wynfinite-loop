@@ -11,7 +11,10 @@
 <div id="container">
   <% @pictures.each do |picture| %>
   <div class="item">
-      <%= image_tag picture.url, class:"size-#{rand(3) + 1}" %>
+     <%= link_to picture.url, data: { lightbox:"photogur" } do %>
+            <%= image_tag picture.url, class:"size-#{rand(3) + 1}" %>
+              <% end %>
+      
       <div class="options">
       <h3><%= picture.title %></h3>
       <!-- <%= link_to 'Show', picture, class:"fa fa-search" %> -->
